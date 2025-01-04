@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'CMU Serif';
-    src: url('cmunrm.ttf') format('truetype');
+    font-family: 'Palatino';
+    src: url('palatino.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'CMU Serif', serif;
+    font-family: 'Palatino', serif;
 }
 
 {

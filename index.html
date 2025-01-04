@@ -1,0 +1,138 @@
+<html lang="en-us">
+
+<head>
+    <script defer="" src="https://cloud.umami.is/script.js" data-website-id="cf31dfd6-de16-4374-befb-bc57d5daa038"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matías Carrasco Jiménez</title>
+
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        /* Ensure all links stay blue */
+        a {
+            color: crimson;
+            text-decoration: none;
+            margin-right: 20px; /* Add spacing between links */
+        }
+
+        a:visited {
+            color: crimson;
+        }
+
+        a:hover {
+            text-decoration: bold;
+        }
+
+        /* Style for name */
+        .name {
+            font-size: 3em; /* Large font for your name */
+            font-weight: 200; /* Thinner font */
+            color: black; /* Black color */
+            text-align: center; /* Center the name */
+            margin: 40px 0; /* Add more space below title */
+        }
+
+        /* Navigation menu */
+        .nav {
+            font-size: 1em; /* Slightly smaller font for navigation links */
+            text-align: right; /* Align menu to the right */
+            position: absolute; /* Place it at the top */
+            top: 10px; /* Offset from the top */
+            right: 30px; /* Offset from the right */
+        }
+
+        .nav a {
+            margin: 0 15px; 
+        }
+
+        .picture-container {
+            float: left; /* Float photo to the left */
+            width: 50%; /* Take up half the width */
+            margin-right: 20px; /* Add spacing between image and text */
+        }
+
+        .picture-container img {
+            width: 100%; /* Make the image responsive within the container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure proper layout */
+        }
+
+        .intro {
+            font-size: 0.9em; /* Smaller font for intro text */
+            margin-top: 30px; /* Add more space between title and body */
+        }
+
+        .intro p {
+            text-align: justify; /* Justify text for better readability */
+        }
+
+        .container {
+            padding: 30px; /* Larger margins from the edge of the website */
+            max-width: 1200px; /* Restrict container width for readability */
+            margin: 0 auto; /* Center container on the page */
+            overflow: hidden; /* Clear floats */
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                font-size: 0.9em; /* Slightly smaller font on narrow screens */
+                text-align: right; /* Center the menu */
+                position: static; /* Place it within the flow */
+                margin-bottom: 20px; /* Add spacing below the menu */
+            }
+
+            .nav a {
+                display: inline-block;
+                margin: 0 10px;
+            }
+
+            .picture-container {
+                float: none; /* Remove float on smaller screens */
+                width: 100%; /* Full width on smaller devices */
+                margin-bottom: 20px; /* Add spacing below the picture */
+                text-align: center; /* Center-align the image */
+            }
+
+            .intro {
+                text-align: center; /* Center-align text for better readability */
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="name">Matías Carrasco Jiménez</p>
+       	<p class="nav">
+    	<a href="/" style="color: black;">Home</a> 
+    	<a href="/research">Research</a> 
+    	<a href="/teaching">Teaching</a> 
+    	<a href="/lecture-notes">Lecture Notes</a> 
+    	<a href="/literature">Literature</a> 
+   	    <a href="/photos">Photos</a>
+	</p>
+
+        <div class="picture-container">
+            <picture>
+                <source srcset="home.png 1280w, home.png 640w" type="image/webp">
+                <source srcset="home.png 1280w, home.png 640w">
+                <img src="home.png" alt="Victor Ortega">
+            </picture>
+        </div>
+        <div class="intro">
+            <p>Hi there! My name is Matías, I’m currently finishing my B.S.c in Economics at the National Autonomous University of Mexico (UNAM). As of January 2025, I find myself doing an exchange semester at the Humboldt-Universität zu Berlin.
+            </p>
+            <p>From October 2022 to October 2024 I had the privilege of receiving a scholarship from the National Council of Humanities, Science and Technology (CONAHCYT), working as a research assistant for Dr. Fernando Alberto Cortés Cáceres, at UNAM’s Development Studies Program (PUED). Since November 2024 I’ve been working, also at PUED, as a research assistant for Dr. Iliana Yaschine Arroyo. 
+            </p>
+            <p>My research interests are centered around multidimensional poverty, income inequality, development economics and the political economy of neoclassical theory.</p>
+            <p> I’m interested in pursuing an academic career in economics after graduate school. I’m currently looking to apply to M.S.c programs in economics in the European Union for the incoming 2025 winter semester.
+            </p>
+	    <p>Feel free to reach me at<a href="mailto:matiascarrascoj@gmail.com">matiascarrascoj@gmail.com</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

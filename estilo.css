@@ -1,16 +1,178 @@
+/* ---------------------------------------------------------------
+   Computer Modern (CMU Serif), self-hosted so every visitor gets it
+   regardless of what is installed on their machine. The files in
+   /fonts are WOFF2 subsets (Latin + Latin Extended-A + punctuation),
+   which covers English, Spanish, French, Italian and German.
+   font-display: block hides text for a moment (max ~3 s) rather than
+   flashing a different serif while the font downloads.
+   --------------------------------------------------------------- */
 @font-face {
     font-family: 'CMU Serif';
-    src: url('cmunrm.ttf') format('truetype');
+    src: url('fonts/cmunrm.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'CMU Serif';
+    src: url('fonts/cmunbx.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'CMU Serif';
+    src: url('fonts/cmunti.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'CMU Serif';
+    src: url('fonts/cmunbi.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: block;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'CMU Serif', serif;
+    color: #000;
+    background: #fff;
 }
 
-{
+a {
+    color: crimson;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:focus-visible {
+    outline: 1px dotted crimson;
+    outline-offset: 2px;
+}
+
+h2 {
+    margin: 30px 0 0.83em;
+}
+
+/* ---------- Layout ---------- */
+.container {
+    position: relative; /* anchors the nav to the content column */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.nav {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    margin: 1em 0;
+    text-align: right;
+}
+
+.nav a {
+    margin: 0 15px;
+}
+
+.nav a[aria-current="page"] {
+    color: #000;
+}
+
+/* ---------- Home ---------- */
+.name {
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.picture-container {
+    float: left;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.picture-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.bio {
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+.bio p {
+    text-align: justify;
+}
+
+.bio .contact {
+    text-align: left; /* avoids huge gaps when the e-mail address wraps */
+}
+
+/* ---------- Lists of papers / notes ---------- */
+.level {
+    font-style: italic;
+    margin: 0 0 20px;
+    line-height: 1.4;
+}
+
+.paper {
+    margin-bottom: 20px;
+}
+
+.paper-line {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+.paper-title {
+    display: inline-block;
+    max-width: 500px;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 768px) {
+    .nav {
+        position: static;
+        font-size: 0.9em;
+        margin: 0 0 20px;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .picture-container {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px;
+    }
+
+    .bio {
+        margin-top: 10px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 0.83em;
+    }
 }

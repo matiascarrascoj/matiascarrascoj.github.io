@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/
+
+# Editors
+.vscode/
+*.swp
